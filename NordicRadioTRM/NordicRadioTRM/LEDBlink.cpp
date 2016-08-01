@@ -270,7 +270,7 @@ int main(void)
 void HandleMessage(void)
 {
 	uint32_t rxCountMod = 0;
-	rxCountMod = rxCount % 600;
+	rxCountMod = rxCount % 600; // % 600 is Duty cycle of 6 seconds
 	
 	SyncPayload *syncRxPayload = (SyncPayload*)&rx_payload.data[0];
 	SyncPayload *syncTxPayload = (SyncPayload*)&tx_payload.data[0];
@@ -286,7 +286,7 @@ void HandleMessage(void)
 	else if (syncRxPayload->Slot1Status == CH_USED && syncRxPayload->Slot1Suid == SUID)
 	{
 		pair_status = PAIRED;
-		if (rxCountMod == 0 || rxCountMod < 6)
+		if (rxCountMod == 0 || rxCountMod < 6) // rxCountMod < 6 is ON time of 60ms
 		{
 			nrf_gpio_pin_write(LED_1, LED_ON);
 			nrf_gpio_pin_write(LED_2, LED_ON);
