@@ -1,0 +1,5 @@
+﻿  VisualGDB: Run "cmd.exe /c "C:\SysGCC\arm-eabi\bin\make.exe" CONFIG=Debug" in directory "C:\Users\Christopher\Desktop\NordicDevelopment\NoridWorkspace\NordicRadioCRM\NordicRadioCRM" on local computer
+  make: Nothing to be done for `all'.
+  ------------------- Memory utilization report -------------------
+  Used FLASH: 123KB out of 512KB (24%)
+  Used RAM: 11KB out of 32KB (36%)

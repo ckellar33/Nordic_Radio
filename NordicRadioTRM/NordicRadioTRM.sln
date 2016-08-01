@@ -1,0 +1,24 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NordicRadioTRM", "NordicRadioTRM\NordicRadioTRM.vcxproj", "{EC70CC1C-4CBD-4DBE-BD60-C78A1E08B6E1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EC70CC1C-4CBD-4DBE-BD60-C78A1E08B6E1}.Debug|x64.ActiveCfg = Debug|Win32
+		{EC70CC1C-4CBD-4DBE-BD60-C78A1E08B6E1}.Debug|x86.ActiveCfg = Debug|Win32
+		{EC70CC1C-4CBD-4DBE-BD60-C78A1E08B6E1}.Debug|x86.Build.0 = Debug|Win32
+		{EC70CC1C-4CBD-4DBE-BD60-C78A1E08B6E1}.Release|x64.ActiveCfg = Release|Win32
+		{EC70CC1C-4CBD-4DBE-BD60-C78A1E08B6E1}.Release|x86.ActiveCfg = Release|Win32
+		{EC70CC1C-4CBD-4DBE-BD60-C78A1E08B6E1}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
