@@ -30,6 +30,7 @@ extern "C" {
 #include "nrf_log.h"
 #include "boards.h"
 #include "nrf_log.h"
+#include "nrf_drv_rtc.h"
 #ifdef __cplusplus
 }
 #endif
@@ -58,9 +59,14 @@ typedef struct
 #define CH_PAIR 0x01
 #define CH_USED 0x02
 
+/* Varible Declarations for RTC*/
+#define RTC_CC_VALUE 8                            //Determines the RTC interrupt frequency and thereby the SAADC sampling frequency
+const  nrf_drv_rtc_t           rtc = NRF_DRV_RTC_INSTANCE(2); /**< Declaring an instance of nrf_drv_rtc for RTC2. */
+static bool                    m_saadc_initialized = false; 
+/* END Varibles for RTC */
 const nrf_drv_timer_t TIMER_LED = NRF_DRV_TIMER_INSTANCE(1);
 /* Variable Declarations for SAADC */
-#define SAMPLES_IN_BUFFER 2//5
+#define SAMPLES_IN_BUFFER 1//5 - Having this set to 1 decreases current draw
 
 static const nrf_drv_timer_t   m_timer = NRF_DRV_TIMER_INSTANCE(0);
 static nrf_saadc_value_t       m_buffer_pool[2][SAMPLES_IN_BUFFER];
@@ -538,6 +544,45 @@ void saadc_init(void)
 	APP_ERROR_CHECK(err_code);
 }
 /* END --- SAADC (Successive Approx. Analog-to-Digital Converter) Implementation Code */
+
+/* RTC2 Implementation Code */
+static void rtc_handler(nrf_drv_rtc_int_type_t int_type)
+{
+	uint32_t err_code;
+	
+	if (int_type == NRF_DRV_RTC_INT_COMPARE0)
+	{		
+		if (!m_saadc_initialized)
+		{
+			saadc_init();                                              //Initialize the SAADC. In the case when SAADC_SAMPLES_IN_BUFFER > 1 then we only need to initialize the SAADC when the the buffer is empty.
+		}
+		m_saadc_initialized = true;                                    //Set SAADC as initialized
+		nrf_drv_saadc_sample();                                        //Trigger the SAADC SAMPLE task
+			
+		LEDS_INVERT(BSP_LED_0_MASK);                                   //Toggle LED1 to indicate SAADC sampling start
+			
+		err_code = nrf_drv_rtc_cc_set(&rtc, 0, RTC_CC_VALUE, true);       //Set RTC compare value. This needs to be done every time as the nrf_drv_rtc clears the compare register on every compare match
+		APP_ERROR_CHECK(err_code);
+		nrf_drv_rtc_counter_clear(&rtc);                               //Clear the RTC counter to start count from zero
+	}
+}
+
+static void rtc_config(void)
+{
+	uint32_t err_code;
+
+	    //Initialize RTC instance
+	err_code = nrf_drv_rtc_init(&rtc, NULL, rtc_handler);              //Initialize the RTC with callback function rtc_handler. The rtc_handler must be implemented in this applicaiton. Passing NULL here for RTC configuration means that configuration will be taken from the nrf_drv_config.h file.
+	APP_ERROR_CHECK(err_code);
+
+	err_code = nrf_drv_rtc_cc_set(&rtc, 0, RTC_CC_VALUE, true);           //Set RTC compare value to trigger interrupt. Configure the interrupt frequency by adjust RTC_CC_VALUE and RTC2_CONFIG_FREQUENCY constant in the nrf_drv_config.h file
+	APP_ERROR_CHECK(err_code);
+
+	    //Power on RTC instance
+	nrf_drv_rtc_enable(&rtc);                                          //Enable RTC
+}
+
+/* END --- RTC2 Implementation Code */
 
 #define START_TX   1
 #define TX_DELAY   8 // 8 = 62.5us * 8 = 500 us

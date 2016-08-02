@@ -124,7 +124,7 @@
 #define RTC1_INSTANCE_INDEX      (RTC0_ENABLED)
 #endif
 
-#define RTC2_ENABLED 0
+#define RTC2_ENABLED 1
 
 #if (RTC2_ENABLED == 1)
 #define RTC2_CONFIG_FREQUENCY    32768
