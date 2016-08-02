@@ -63,4 +63,7 @@ Debug/LEDBlink.o: LEDBlink.cpp \
  C:\Users\Christopher\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x/nRF5x/components/libraries/util/sdk_resources.h \
  C:\Users\Christopher\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x/nRF5x/components/softdevice/S132/headers/nrf_sd_def.h \
  C:\Users\Christopher\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x/nRF5x/components/libraries/util/nrf_log.h \
- boards.h pca10040.h
+ boards.h pca10040.h \
+ C:\Users\Christopher\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x/nRF5x/components/drivers_nrf/rtc/nrf_drv_rtc.h \
+ C:\Users\Christopher\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x/nRF5x/components/drivers_nrf/common/nrf_drv_common.h \
+ C:\Users\Christopher\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x/nRF5x/components/drivers_nrf/hal/nrf_rtc.h

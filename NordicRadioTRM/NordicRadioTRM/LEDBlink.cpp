@@ -240,6 +240,9 @@ int main(void)
 {
 	uint32_t err_code;
 	
+	/* Reduces current draw significantly. */
+	NRF_POWER->DCDCEN = 1;
+	
 	err_code = logging_init();
 	APP_ERROR_CHECK(err_code);
 	
@@ -266,8 +269,7 @@ int main(void)
 
 	while (true)
 	{
-		//power_manage();
-		__WFE();
+		power_manage();
 	}
 }
 /*lint -restore */
