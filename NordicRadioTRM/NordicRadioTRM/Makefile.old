@@ -35,7 +35,7 @@ error:
 	$(error Invalid configuration, please check your inputs)
 endif
 
-SOURCEFILES := ../../AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.nordic.nrf5x/nRF5x/components/drivers_nrf/ble_flash/ble_flash.c ../../AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.nordic.nrf5x/nRF5x/components/drivers_nrf/clock/nrf_drv_clock.c ../../AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.nordic.nrf5x/nRF5x/components/drivers_nrf/common/nrf_drv_common.c ../../AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.nordic.nrf5x/nRF5x/components/drivers_nrf/comp/nrf_drv_comp.c ../../AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.nordic.nrf5x/nRF5x/components/drivers_nrf/delay/nrf_delay.c ../../AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.nordic.nrf5x/nRF5x/components/drivers_nrf/gpiote/nrf_drv_gpiote.c ../../AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.nordic.nrf5x/nRF5x/components/drivers_nrf/hal/nrf_ecb.c ../../AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.nordic.nrf5x/nRF5x/components/drivers_nrf/hal/nrf_nvmc.c ../../AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.nordic.nrf5x/nRF5x/components/drivers_nrf/hal/nrf_saadc.c ../../AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.nordic.nrf5x/nRF5x/components/drivers_nrf/i2s/nrf_drv_i2s.c ../../AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.nordic.nrf5x/nRF5x/components/drivers_nrf/lpcomp/nrf_drv_lpcomp.c ../../AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.nordic.nrf5x/nRF5x/components/drivers_nrf/nrf_soc_nosd/nrf_nvic.c ../../AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.nordic.nrf5x/nRF5x/components/drivers_nrf/nrf_soc_nosd/nrf_soc.c ../../AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.nordic.nrf5x/nRF5x/components/drivers_nrf/pdm/nrf_drv_pdm.c ../../AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.nordic.nrf5x/nRF5x/components/drivers_nrf/ppi/nrf_drv_ppi.c ../../AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.nordic.nrf5x/nRF5x/components/drivers_nrf/pstorage/pstorage.c ../../AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.nordic.nrf5x/nRF5x/components/drivers_nrf/pwm/nrf_drv_pwm.c ../../AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.nordic.nrf5x/nRF5x/components/drivers_nrf/qdec/nrf_drv_qdec.c ../../AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.nordic.nrf5x/nRF5x/components/drivers_nrf/radio_config/radio_config.c ../../AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.nordic.nrf5x/nRF5x/components/drivers_nrf/rng/nrf_drv_rng.c ../../AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.nordic.nrf5x/nRF5x/components/drivers_nrf/rtc/nrf_drv_rtc.c ../../AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.nordic.nrf5x/nRF5x/components/drivers_nrf/saadc/nrf_drv_saadc.c ../../AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.nordic.nrf5x/nRF5x/components/drivers_nrf/sdio/sdio.c ../../AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.nordic.nrf5x/nRF5x/components/drivers_nrf/swi/nrf_drv_swi.c ../../AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.nordic.nrf5x/nRF5x/components/drivers_nrf/timer/nrf_drv_timer.c ../../AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.nordic.nrf5x/nRF5x/components/drivers_nrf/twis_slave/nrf_drv_twis.c ../../AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.nordic.nrf5x/nRF5x/components/drivers_nrf/twi_master/nrf_drv_twi.c ../../AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.nordic.nrf5x/nRF5x/components/drivers_nrf/wdt/nrf_drv_wdt.c ../../AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.nordic.nrf5x/nRF5x/components/libraries/util/app_error.c ../../AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.nordic.nrf5x/nRF5x/components/libraries/util/app_error_weak.c ../../AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.nordic.nrf5x/nRF5x/components/libraries/util/app_util_platform.c ../../AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.nordic.nrf5x/nRF5x/components/libraries/util/nrf_assert.c ../../AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.nordic.nrf5x/nRF5x/components/libraries/util/nrf_log.c ../../AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.nordic.nrf5x/nRF5x/components/libraries/util/sdk_mapped_flags.c ../../AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.nordic.nrf5x/nRF5x/components/softdevice/common/softdevice_handler/softdevice_handler.c ../../AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.nordic.nrf5x/nRF5x/components/toolchain/system_nrf52.c ../../AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.nordic.nrf5x/nRF5x/StartupFiles/startup_nRF52x.c LEDBlink.cpp nrf_esb.c
+SOURCEFILES := $(BSP_ROOT)/nRF5x/components/drivers_nrf/ble_flash/ble_flash.c $(BSP_ROOT)/nRF5x/components/drivers_nrf/clock/nrf_drv_clock.c $(BSP_ROOT)/nRF5x/components/drivers_nrf/common/nrf_drv_common.c $(BSP_ROOT)/nRF5x/components/drivers_nrf/comp/nrf_drv_comp.c $(BSP_ROOT)/nRF5x/components/drivers_nrf/gpiote/nrf_drv_gpiote.c $(BSP_ROOT)/nRF5x/components/drivers_nrf/hal/nrf_ecb.c $(BSP_ROOT)/nRF5x/components/drivers_nrf/hal/nrf_nvmc.c $(BSP_ROOT)/nRF5x/components/drivers_nrf/hal/nrf_saadc.c $(BSP_ROOT)/nRF5x/components/drivers_nrf/i2s/nrf_drv_i2s.c $(BSP_ROOT)/nRF5x/components/drivers_nrf/lpcomp/nrf_drv_lpcomp.c $(BSP_ROOT)/nRF5x/components/drivers_nrf/nrf_soc_nosd/nrf_nvic.c $(BSP_ROOT)/nRF5x/components/drivers_nrf/nrf_soc_nosd/nrf_soc.c $(BSP_ROOT)/nRF5x/components/drivers_nrf/pdm/nrf_drv_pdm.c $(BSP_ROOT)/nRF5x/components/drivers_nrf/ppi/nrf_drv_ppi.c $(BSP_ROOT)/nRF5x/components/drivers_nrf/pstorage/pstorage.c $(BSP_ROOT)/nRF5x/components/drivers_nrf/pwm/nrf_drv_pwm.c $(BSP_ROOT)/nRF5x/components/drivers_nrf/qdec/nrf_drv_qdec.c $(BSP_ROOT)/nRF5x/components/drivers_nrf/radio_config/radio_config.c $(BSP_ROOT)/nRF5x/components/drivers_nrf/rng/nrf_drv_rng.c $(BSP_ROOT)/nRF5x/components/drivers_nrf/rtc/nrf_drv_rtc.c $(BSP_ROOT)/nRF5x/components/drivers_nrf/saadc/nrf_drv_saadc.c $(BSP_ROOT)/nRF5x/components/drivers_nrf/sdio/sdio.c $(BSP_ROOT)/nRF5x/components/drivers_nrf/swi/nrf_drv_swi.c $(BSP_ROOT)/nRF5x/components/drivers_nrf/timer/nrf_drv_timer.c $(BSP_ROOT)/nRF5x/components/drivers_nrf/twis_slave/nrf_drv_twis.c $(BSP_ROOT)/nRF5x/components/drivers_nrf/twi_master/nrf_drv_twi.c $(BSP_ROOT)/nRF5x/components/drivers_nrf/wdt/nrf_drv_wdt.c $(BSP_ROOT)/nRF5x/components/libraries/util/app_error.c $(BSP_ROOT)/nRF5x/components/libraries/util/app_error_weak.c $(BSP_ROOT)/nRF5x/components/libraries/util/app_util_platform.c $(BSP_ROOT)/nRF5x/components/libraries/util/nrf_assert.c $(BSP_ROOT)/nRF5x/components/libraries/util/nrf_log.c $(BSP_ROOT)/nRF5x/components/libraries/util/sdk_mapped_flags.c $(BSP_ROOT)/nRF5x/components/softdevice/common/softdevice_handler/softdevice_handler.c $(BSP_ROOT)/nRF5x/components/toolchain/system_nrf52.c $(BSP_ROOT)/nRF5x/StartupFiles/startup_nRF52x.c LEDBlink.cpp nrf_esb.c
 EXTERNAL_LIBS := 
 EXTERNAL_LIBS_COPIED := $(foreach lib, $(EXTERNAL_LIBS),$(BINARYDIR)/$(notdir $(lib)))
 
@@ -181,150 +181,146 @@ $(BINARYDIR)/%.o : %.cxx $(all_make_files) |$(BINARYDIR)
 #VisualGDB: GeneratedRules				#<--- All lines below are auto-generated
 
 
-$(BINARYDIR)/ble_flash.o : ../../AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.nordic.nrf5x/nRF5x/components/drivers_nrf/ble_flash/ble_flash.c $(all_make_files) |$(BINARYDIR)
+$(BINARYDIR)/ble_flash.o : $(BSP_ROOT)/nRF5x/components/drivers_nrf/ble_flash/ble_flash.c $(all_make_files) |$(BINARYDIR)
 	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
 
 
-$(BINARYDIR)/nrf_drv_clock.o : ../../AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.nordic.nrf5x/nRF5x/components/drivers_nrf/clock/nrf_drv_clock.c $(all_make_files) |$(BINARYDIR)
+$(BINARYDIR)/nrf_drv_clock.o : $(BSP_ROOT)/nRF5x/components/drivers_nrf/clock/nrf_drv_clock.c $(all_make_files) |$(BINARYDIR)
 	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
 
 
-$(BINARYDIR)/nrf_drv_common.o : ../../AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.nordic.nrf5x/nRF5x/components/drivers_nrf/common/nrf_drv_common.c $(all_make_files) |$(BINARYDIR)
+$(BINARYDIR)/nrf_drv_common.o : $(BSP_ROOT)/nRF5x/components/drivers_nrf/common/nrf_drv_common.c $(all_make_files) |$(BINARYDIR)
 	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
 
 
-$(BINARYDIR)/nrf_drv_comp.o : ../../AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.nordic.nrf5x/nRF5x/components/drivers_nrf/comp/nrf_drv_comp.c $(all_make_files) |$(BINARYDIR)
+$(BINARYDIR)/nrf_drv_comp.o : $(BSP_ROOT)/nRF5x/components/drivers_nrf/comp/nrf_drv_comp.c $(all_make_files) |$(BINARYDIR)
 	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
 
 
-$(BINARYDIR)/nrf_delay.o : ../../AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.nordic.nrf5x/nRF5x/components/drivers_nrf/delay/nrf_delay.c $(all_make_files) |$(BINARYDIR)
+$(BINARYDIR)/nrf_drv_gpiote.o : $(BSP_ROOT)/nRF5x/components/drivers_nrf/gpiote/nrf_drv_gpiote.c $(all_make_files) |$(BINARYDIR)
 	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
 
 
-$(BINARYDIR)/nrf_drv_gpiote.o : ../../AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.nordic.nrf5x/nRF5x/components/drivers_nrf/gpiote/nrf_drv_gpiote.c $(all_make_files) |$(BINARYDIR)
+$(BINARYDIR)/nrf_ecb.o : $(BSP_ROOT)/nRF5x/components/drivers_nrf/hal/nrf_ecb.c $(all_make_files) |$(BINARYDIR)
 	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
 
 
-$(BINARYDIR)/nrf_ecb.o : ../../AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.nordic.nrf5x/nRF5x/components/drivers_nrf/hal/nrf_ecb.c $(all_make_files) |$(BINARYDIR)
+$(BINARYDIR)/nrf_nvmc.o : $(BSP_ROOT)/nRF5x/components/drivers_nrf/hal/nrf_nvmc.c $(all_make_files) |$(BINARYDIR)
 	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
 
 
-$(BINARYDIR)/nrf_nvmc.o : ../../AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.nordic.nrf5x/nRF5x/components/drivers_nrf/hal/nrf_nvmc.c $(all_make_files) |$(BINARYDIR)
+$(BINARYDIR)/nrf_saadc.o : $(BSP_ROOT)/nRF5x/components/drivers_nrf/hal/nrf_saadc.c $(all_make_files) |$(BINARYDIR)
 	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
 
 
-$(BINARYDIR)/nrf_saadc.o : ../../AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.nordic.nrf5x/nRF5x/components/drivers_nrf/hal/nrf_saadc.c $(all_make_files) |$(BINARYDIR)
+$(BINARYDIR)/nrf_drv_i2s.o : $(BSP_ROOT)/nRF5x/components/drivers_nrf/i2s/nrf_drv_i2s.c $(all_make_files) |$(BINARYDIR)
 	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
 
 
-$(BINARYDIR)/nrf_drv_i2s.o : ../../AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.nordic.nrf5x/nRF5x/components/drivers_nrf/i2s/nrf_drv_i2s.c $(all_make_files) |$(BINARYDIR)
+$(BINARYDIR)/nrf_drv_lpcomp.o : $(BSP_ROOT)/nRF5x/components/drivers_nrf/lpcomp/nrf_drv_lpcomp.c $(all_make_files) |$(BINARYDIR)
 	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
 
 
-$(BINARYDIR)/nrf_drv_lpcomp.o : ../../AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.nordic.nrf5x/nRF5x/components/drivers_nrf/lpcomp/nrf_drv_lpcomp.c $(all_make_files) |$(BINARYDIR)
+$(BINARYDIR)/nrf_nvic.o : $(BSP_ROOT)/nRF5x/components/drivers_nrf/nrf_soc_nosd/nrf_nvic.c $(all_make_files) |$(BINARYDIR)
 	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
 
 
-$(BINARYDIR)/nrf_nvic.o : ../../AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.nordic.nrf5x/nRF5x/components/drivers_nrf/nrf_soc_nosd/nrf_nvic.c $(all_make_files) |$(BINARYDIR)
+$(BINARYDIR)/nrf_soc.o : $(BSP_ROOT)/nRF5x/components/drivers_nrf/nrf_soc_nosd/nrf_soc.c $(all_make_files) |$(BINARYDIR)
 	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
 
 
-$(BINARYDIR)/nrf_soc.o : ../../AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.nordic.nrf5x/nRF5x/components/drivers_nrf/nrf_soc_nosd/nrf_soc.c $(all_make_files) |$(BINARYDIR)
+$(BINARYDIR)/nrf_drv_pdm.o : $(BSP_ROOT)/nRF5x/components/drivers_nrf/pdm/nrf_drv_pdm.c $(all_make_files) |$(BINARYDIR)
 	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
 
 
-$(BINARYDIR)/nrf_drv_pdm.o : ../../AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.nordic.nrf5x/nRF5x/components/drivers_nrf/pdm/nrf_drv_pdm.c $(all_make_files) |$(BINARYDIR)
+$(BINARYDIR)/nrf_drv_ppi.o : $(BSP_ROOT)/nRF5x/components/drivers_nrf/ppi/nrf_drv_ppi.c $(all_make_files) |$(BINARYDIR)
 	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
 
 
-$(BINARYDIR)/nrf_drv_ppi.o : ../../AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.nordic.nrf5x/nRF5x/components/drivers_nrf/ppi/nrf_drv_ppi.c $(all_make_files) |$(BINARYDIR)
+$(BINARYDIR)/pstorage.o : $(BSP_ROOT)/nRF5x/components/drivers_nrf/pstorage/pstorage.c $(all_make_files) |$(BINARYDIR)
 	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
 
 
-$(BINARYDIR)/pstorage.o : ../../AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.nordic.nrf5x/nRF5x/components/drivers_nrf/pstorage/pstorage.c $(all_make_files) |$(BINARYDIR)
+$(BINARYDIR)/nrf_drv_pwm.o : $(BSP_ROOT)/nRF5x/components/drivers_nrf/pwm/nrf_drv_pwm.c $(all_make_files) |$(BINARYDIR)
 	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
 
 
-$(BINARYDIR)/nrf_drv_pwm.o : ../../AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.nordic.nrf5x/nRF5x/components/drivers_nrf/pwm/nrf_drv_pwm.c $(all_make_files) |$(BINARYDIR)
+$(BINARYDIR)/nrf_drv_qdec.o : $(BSP_ROOT)/nRF5x/components/drivers_nrf/qdec/nrf_drv_qdec.c $(all_make_files) |$(BINARYDIR)
 	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
 
 
-$(BINARYDIR)/nrf_drv_qdec.o : ../../AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.nordic.nrf5x/nRF5x/components/drivers_nrf/qdec/nrf_drv_qdec.c $(all_make_files) |$(BINARYDIR)
+$(BINARYDIR)/radio_config.o : $(BSP_ROOT)/nRF5x/components/drivers_nrf/radio_config/radio_config.c $(all_make_files) |$(BINARYDIR)
 	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
 
 
-$(BINARYDIR)/radio_config.o : ../../AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.nordic.nrf5x/nRF5x/components/drivers_nrf/radio_config/radio_config.c $(all_make_files) |$(BINARYDIR)
+$(BINARYDIR)/nrf_drv_rng.o : $(BSP_ROOT)/nRF5x/components/drivers_nrf/rng/nrf_drv_rng.c $(all_make_files) |$(BINARYDIR)
 	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
 
 
-$(BINARYDIR)/nrf_drv_rng.o : ../../AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.nordic.nrf5x/nRF5x/components/drivers_nrf/rng/nrf_drv_rng.c $(all_make_files) |$(BINARYDIR)
+$(BINARYDIR)/nrf_drv_rtc.o : $(BSP_ROOT)/nRF5x/components/drivers_nrf/rtc/nrf_drv_rtc.c $(all_make_files) |$(BINARYDIR)
 	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
 
 
-$(BINARYDIR)/nrf_drv_rtc.o : ../../AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.nordic.nrf5x/nRF5x/components/drivers_nrf/rtc/nrf_drv_rtc.c $(all_make_files) |$(BINARYDIR)
+$(BINARYDIR)/nrf_drv_saadc.o : $(BSP_ROOT)/nRF5x/components/drivers_nrf/saadc/nrf_drv_saadc.c $(all_make_files) |$(BINARYDIR)
 	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
 
 
-$(BINARYDIR)/nrf_drv_saadc.o : ../../AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.nordic.nrf5x/nRF5x/components/drivers_nrf/saadc/nrf_drv_saadc.c $(all_make_files) |$(BINARYDIR)
+$(BINARYDIR)/sdio.o : $(BSP_ROOT)/nRF5x/components/drivers_nrf/sdio/sdio.c $(all_make_files) |$(BINARYDIR)
 	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
 
 
-$(BINARYDIR)/sdio.o : ../../AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.nordic.nrf5x/nRF5x/components/drivers_nrf/sdio/sdio.c $(all_make_files) |$(BINARYDIR)
+$(BINARYDIR)/nrf_drv_swi.o : $(BSP_ROOT)/nRF5x/components/drivers_nrf/swi/nrf_drv_swi.c $(all_make_files) |$(BINARYDIR)
 	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
 
 
-$(BINARYDIR)/nrf_drv_swi.o : ../../AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.nordic.nrf5x/nRF5x/components/drivers_nrf/swi/nrf_drv_swi.c $(all_make_files) |$(BINARYDIR)
+$(BINARYDIR)/nrf_drv_timer.o : $(BSP_ROOT)/nRF5x/components/drivers_nrf/timer/nrf_drv_timer.c $(all_make_files) |$(BINARYDIR)
 	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
 
 
-$(BINARYDIR)/nrf_drv_timer.o : ../../AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.nordic.nrf5x/nRF5x/components/drivers_nrf/timer/nrf_drv_timer.c $(all_make_files) |$(BINARYDIR)
+$(BINARYDIR)/nrf_drv_twis.o : $(BSP_ROOT)/nRF5x/components/drivers_nrf/twis_slave/nrf_drv_twis.c $(all_make_files) |$(BINARYDIR)
 	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
 
 
-$(BINARYDIR)/nrf_drv_twis.o : ../../AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.nordic.nrf5x/nRF5x/components/drivers_nrf/twis_slave/nrf_drv_twis.c $(all_make_files) |$(BINARYDIR)
+$(BINARYDIR)/nrf_drv_twi.o : $(BSP_ROOT)/nRF5x/components/drivers_nrf/twi_master/nrf_drv_twi.c $(all_make_files) |$(BINARYDIR)
 	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
 
 
-$(BINARYDIR)/nrf_drv_twi.o : ../../AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.nordic.nrf5x/nRF5x/components/drivers_nrf/twi_master/nrf_drv_twi.c $(all_make_files) |$(BINARYDIR)
+$(BINARYDIR)/nrf_drv_wdt.o : $(BSP_ROOT)/nRF5x/components/drivers_nrf/wdt/nrf_drv_wdt.c $(all_make_files) |$(BINARYDIR)
 	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
 
 
-$(BINARYDIR)/nrf_drv_wdt.o : ../../AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.nordic.nrf5x/nRF5x/components/drivers_nrf/wdt/nrf_drv_wdt.c $(all_make_files) |$(BINARYDIR)
+$(BINARYDIR)/app_error.o : $(BSP_ROOT)/nRF5x/components/libraries/util/app_error.c $(all_make_files) |$(BINARYDIR)
 	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
 
 
-$(BINARYDIR)/app_error.o : ../../AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.nordic.nrf5x/nRF5x/components/libraries/util/app_error.c $(all_make_files) |$(BINARYDIR)
+$(BINARYDIR)/app_error_weak.o : $(BSP_ROOT)/nRF5x/components/libraries/util/app_error_weak.c $(all_make_files) |$(BINARYDIR)
 	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
 
 
-$(BINARYDIR)/app_error_weak.o : ../../AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.nordic.nrf5x/nRF5x/components/libraries/util/app_error_weak.c $(all_make_files) |$(BINARYDIR)
+$(BINARYDIR)/app_util_platform.o : $(BSP_ROOT)/nRF5x/components/libraries/util/app_util_platform.c $(all_make_files) |$(BINARYDIR)
 	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
 
 
-$(BINARYDIR)/app_util_platform.o : ../../AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.nordic.nrf5x/nRF5x/components/libraries/util/app_util_platform.c $(all_make_files) |$(BINARYDIR)
+$(BINARYDIR)/nrf_assert.o : $(BSP_ROOT)/nRF5x/components/libraries/util/nrf_assert.c $(all_make_files) |$(BINARYDIR)
 	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
 
 
-$(BINARYDIR)/nrf_assert.o : ../../AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.nordic.nrf5x/nRF5x/components/libraries/util/nrf_assert.c $(all_make_files) |$(BINARYDIR)
+$(BINARYDIR)/nrf_log.o : $(BSP_ROOT)/nRF5x/components/libraries/util/nrf_log.c $(all_make_files) |$(BINARYDIR)
 	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
 
 
-$(BINARYDIR)/nrf_log.o : ../../AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.nordic.nrf5x/nRF5x/components/libraries/util/nrf_log.c $(all_make_files) |$(BINARYDIR)
+$(BINARYDIR)/sdk_mapped_flags.o : $(BSP_ROOT)/nRF5x/components/libraries/util/sdk_mapped_flags.c $(all_make_files) |$(BINARYDIR)
 	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
 
 
-$(BINARYDIR)/sdk_mapped_flags.o : ../../AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.nordic.nrf5x/nRF5x/components/libraries/util/sdk_mapped_flags.c $(all_make_files) |$(BINARYDIR)
+$(BINARYDIR)/softdevice_handler.o : $(BSP_ROOT)/nRF5x/components/softdevice/common/softdevice_handler/softdevice_handler.c $(all_make_files) |$(BINARYDIR)
 	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
 
 
-$(BINARYDIR)/softdevice_handler.o : ../../AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.nordic.nrf5x/nRF5x/components/softdevice/common/softdevice_handler/softdevice_handler.c $(all_make_files) |$(BINARYDIR)
+$(BINARYDIR)/system_nrf52.o : $(BSP_ROOT)/nRF5x/components/toolchain/system_nrf52.c $(all_make_files) |$(BINARYDIR)
 	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
 
 
-$(BINARYDIR)/system_nrf52.o : ../../AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.nordic.nrf5x/nRF5x/components/toolchain/system_nrf52.c $(all_make_files) |$(BINARYDIR)
-	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
-
-
-$(BINARYDIR)/startup_nRF52x.o : ../../AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.nordic.nrf5x/nRF5x/StartupFiles/startup_nRF52x.c $(all_make_files) |$(BINARYDIR)
+$(BINARYDIR)/startup_nRF52x.o : $(BSP_ROOT)/nRF5x/StartupFiles/startup_nRF52x.c $(all_make_files) |$(BINARYDIR)
 	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
 

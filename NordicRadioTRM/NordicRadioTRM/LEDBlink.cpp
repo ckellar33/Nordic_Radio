@@ -15,7 +15,7 @@
 
 #ifdef __cplusplus
 extern "C" {
-#endif
+#endif	
 #include "nrf_esb.h"
 #include <string.h>
 #include "sdk_common.h"

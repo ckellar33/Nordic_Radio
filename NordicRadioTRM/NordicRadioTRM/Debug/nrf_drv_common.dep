@@ -1,20 +1,22 @@
 Debug/nrf_drv_common.o: \
  C:\Users\Christopher\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x/nRF5x/components/drivers_nrf/common/nrf_drv_common.c \
- c:\sysgcc\arm-eabi\lib\gcc\arm-eabi\5.3.0\include\stddef.h \
+ c:\sysgcc\arm-eabi\lib\gcc\arm-eabi\6.2.0\include\stddef.h \
  C:\Users\Christopher\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x/nRF5x/components/drivers_nrf/common/nrf_drv_common.h \
- c:\sysgcc\arm-eabi\lib\gcc\arm-eabi\5.3.0\include\stdint.h \
+ c:\sysgcc\arm-eabi\lib\gcc\arm-eabi\6.2.0\include\stdint.h \
  c:\sysgcc\arm-eabi\arm-eabi\sys-include\stdint.h \
  c:\sysgcc\arm-eabi\arm-eabi\sys-include\machine\_default_types.h \
  c:\sysgcc\arm-eabi\arm-eabi\sys-include\sys\features.h \
+ c:\sysgcc\arm-eabi\arm-eabi\sys-include\_newlib_version.h \
  c:\sysgcc\arm-eabi\arm-eabi\sys-include\sys\_intsup.h \
- c:\sysgcc\arm-eabi\lib\gcc\arm-eabi\5.3.0\include\stdbool.h \
+ c:\sysgcc\arm-eabi\arm-eabi\sys-include\sys\_stdint.h \
+ c:\sysgcc\arm-eabi\lib\gcc\arm-eabi\6.2.0\include\stdbool.h \
  C:\Users\Christopher\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x/nRF5x/components/device/nrf.h \
  C:\Users\Christopher\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x/nRF5x/components/device/nrf52.h \
- C:\Users\Christopher\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x/nRF5x/components/toolchain/CMSIS/Include/core_cm4.h \
- C:\Users\Christopher\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x/nRF5x/components/toolchain/CMSIS/Include/core_cmInstr.h \
- C:\Users\Christopher\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x/nRF5x/components/toolchain/CMSIS/Include/cmsis_gcc.h \
- C:\Users\Christopher\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x/nRF5x/components/toolchain/CMSIS/Include/core_cmFunc.h \
- C:\Users\Christopher\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x/nRF5x/components/toolchain/CMSIS/Include/core_cmSimd.h \
+ C:\Users\Christopher\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x/nRF5x/components/toolchain/CMSIS/include/core_cm4.h \
+ C:\Users\Christopher\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x/nRF5x/components/toolchain/CMSIS/include/core_cmInstr.h \
+ C:\Users\Christopher\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x/nRF5x/components/toolchain/CMSIS/include/cmsis_gcc.h \
+ C:\Users\Christopher\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x/nRF5x/components/toolchain/CMSIS/include/core_cmFunc.h \
+ C:\Users\Christopher\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x/nRF5x/components/toolchain/CMSIS/include/core_cmSimd.h \
  C:\Users\Christopher\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x/nRF5x/components/toolchain/system_nrf52.h \
  C:\Users\Christopher\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x/nRF5x/components/device/nrf52_bitfields.h \
  C:\Users\Christopher\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x/nRF5x/components/device/nrf51_to_nrf52.h \
@@ -22,8 +24,9 @@ Debug/nrf_drv_common.o: \
  C:\Users\Christopher\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x/nRF5x/components/device/compiler_abstraction.h \
  C:\Users\Christopher\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x/nRF5x/components/libraries/util/sdk_errors.h \
  C:\Users\Christopher\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x/nRF5x/components/softdevice/S132/headers/nrf_error.h \
- nrf_drv_config.h \
- C:\Users\Christopher\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x/nRF5x/components/drivers_nrf/config/nrf_drv_config_validation.h \
+ sdk_config.h \
+ C:\Users\Christopher\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x/nRF5x/components/libraries/util/app_util.h \
+ C:\Users\Christopher\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x/nRF5x/components/device/compiler_abstraction.h \
  C:\Users\Christopher\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x/nRF5x/components/libraries/util/nrf_assert.h \
  C:\Users\Christopher\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x/nRF5x/components/libraries/util/app_error.h \
  c:\sysgcc\arm-eabi\arm-eabi\sys-include\stdio.h \
@@ -32,20 +35,24 @@ Debug/nrf_drv_common.o: \
  c:\sysgcc\arm-eabi\arm-eabi\sys-include\sys\config.h \
  c:\sysgcc\arm-eabi\arm-eabi\sys-include\machine\ieeefp.h \
  c:\sysgcc\arm-eabi\arm-eabi\sys-include\sys\cdefs.h \
- c:\sysgcc\arm-eabi\lib\gcc\arm-eabi\5.3.0\include\stdarg.h \
+ c:\sysgcc\arm-eabi\lib\gcc\arm-eabi\6.2.0\include\stdarg.h \
  c:\sysgcc\arm-eabi\arm-eabi\sys-include\sys\reent.h \
  c:\sysgcc\arm-eabi\arm-eabi\sys-include\_ansi.h \
  c:\sysgcc\arm-eabi\arm-eabi\sys-include\sys\_types.h \
  c:\sysgcc\arm-eabi\arm-eabi\sys-include\machine\_types.h \
  c:\sysgcc\arm-eabi\arm-eabi\sys-include\sys\lock.h \
  c:\sysgcc\arm-eabi\arm-eabi\sys-include\sys\types.h \
+ c:\sysgcc\arm-eabi\arm-eabi\sys-include\machine\endian.h \
+ c:\sysgcc\arm-eabi\arm-eabi\sys-include\machine\_endian.h \
+ c:\sysgcc\arm-eabi\arm-eabi\sys-include\sys\select.h \
+ c:\sysgcc\arm-eabi\arm-eabi\sys-include\sys\_sigset.h \
+ c:\sysgcc\arm-eabi\arm-eabi\sys-include\sys\_timeval.h \
+ c:\sysgcc\arm-eabi\arm-eabi\sys-include\sys\timespec.h \
+ c:\sysgcc\arm-eabi\arm-eabi\sys-include\sys\_timespec.h \
  c:\sysgcc\arm-eabi\arm-eabi\sys-include\machine\types.h \
  c:\sysgcc\arm-eabi\arm-eabi\sys-include\sys\stdio.h \
  C:\Users\Christopher\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x/nRF5x/components/libraries/util/sdk_errors.h \
  C:\Users\Christopher\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x/nRF5x/components/libraries/util/nordic_common.h \
- C:\Users\Christopher\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x/nRF5x/components/libraries/util/nrf_log.h \
- C:\Users\Christopher\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x/nRF5x/components/libraries/util/app_util.h \
- C:\Users\Christopher\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x/nRF5x/components/device/compiler_abstraction.h \
  C:\Users\Christopher\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x/nRF5x/components/libraries/util/app_error_weak.h \
  C:\Users\Christopher\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x/nRF5x/components/libraries/util/app_util_platform.h \
  C:\Users\Christopher\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x/nRF5x/components/softdevice/S132/headers/nrf_soc.h \

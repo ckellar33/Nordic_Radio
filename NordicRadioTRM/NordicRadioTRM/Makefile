@@ -35,7 +35,7 @@ error:
 	$(error Invalid configuration, please check your inputs)
 endif
 
-SOURCEFILES := $(BSP_ROOT)/nRF5x/components/drivers_nrf/ble_flash/ble_flash.c $(BSP_ROOT)/nRF5x/components/drivers_nrf/clock/nrf_drv_clock.c $(BSP_ROOT)/nRF5x/components/drivers_nrf/common/nrf_drv_common.c $(BSP_ROOT)/nRF5x/components/drivers_nrf/comp/nrf_drv_comp.c $(BSP_ROOT)/nRF5x/components/drivers_nrf/delay/nrf_delay.c $(BSP_ROOT)/nRF5x/components/drivers_nrf/gpiote/nrf_drv_gpiote.c $(BSP_ROOT)/nRF5x/components/drivers_nrf/hal/nrf_ecb.c $(BSP_ROOT)/nRF5x/components/drivers_nrf/hal/nrf_nvmc.c $(BSP_ROOT)/nRF5x/components/drivers_nrf/hal/nrf_saadc.c $(BSP_ROOT)/nRF5x/components/drivers_nrf/i2s/nrf_drv_i2s.c $(BSP_ROOT)/nRF5x/components/drivers_nrf/lpcomp/nrf_drv_lpcomp.c $(BSP_ROOT)/nRF5x/components/drivers_nrf/nrf_soc_nosd/nrf_nvic.c $(BSP_ROOT)/nRF5x/components/drivers_nrf/nrf_soc_nosd/nrf_soc.c $(BSP_ROOT)/nRF5x/components/drivers_nrf/pdm/nrf_drv_pdm.c $(BSP_ROOT)/nRF5x/components/drivers_nrf/ppi/nrf_drv_ppi.c $(BSP_ROOT)/nRF5x/components/drivers_nrf/pstorage/pstorage.c $(BSP_ROOT)/nRF5x/components/drivers_nrf/pwm/nrf_drv_pwm.c $(BSP_ROOT)/nRF5x/components/drivers_nrf/qdec/nrf_drv_qdec.c $(BSP_ROOT)/nRF5x/components/drivers_nrf/radio_config/radio_config.c $(BSP_ROOT)/nRF5x/components/drivers_nrf/rng/nrf_drv_rng.c $(BSP_ROOT)/nRF5x/components/drivers_nrf/rtc/nrf_drv_rtc.c $(BSP_ROOT)/nRF5x/components/drivers_nrf/saadc/nrf_drv_saadc.c $(BSP_ROOT)/nRF5x/components/drivers_nrf/sdio/sdio.c $(BSP_ROOT)/nRF5x/components/drivers_nrf/swi/nrf_drv_swi.c $(BSP_ROOT)/nRF5x/components/drivers_nrf/timer/nrf_drv_timer.c $(BSP_ROOT)/nRF5x/components/drivers_nrf/twis_slave/nrf_drv_twis.c $(BSP_ROOT)/nRF5x/components/drivers_nrf/twi_master/nrf_drv_twi.c $(BSP_ROOT)/nRF5x/components/drivers_nrf/wdt/nrf_drv_wdt.c $(BSP_ROOT)/nRF5x/components/libraries/util/app_error.c $(BSP_ROOT)/nRF5x/components/libraries/util/app_error_weak.c $(BSP_ROOT)/nRF5x/components/libraries/util/app_util_platform.c $(BSP_ROOT)/nRF5x/components/libraries/util/nrf_assert.c $(BSP_ROOT)/nRF5x/components/libraries/util/nrf_log.c $(BSP_ROOT)/nRF5x/components/libraries/util/sdk_mapped_flags.c $(BSP_ROOT)/nRF5x/components/softdevice/common/softdevice_handler/softdevice_handler.c $(BSP_ROOT)/nRF5x/components/toolchain/system_nrf52.c $(BSP_ROOT)/nRF5x/StartupFiles/startup_nRF52x.c LEDBlink.cpp nrf_esb.c
+SOURCEFILES := $(BSP_ROOT)/nRF5x/components/drivers_nrf/ble_flash/ble_flash.c $(BSP_ROOT)/nRF5x/components/drivers_nrf/clock/nrf_drv_clock.c $(BSP_ROOT)/nRF5x/components/drivers_nrf/common/nrf_drv_common.c $(BSP_ROOT)/nRF5x/components/drivers_nrf/comp/nrf_drv_comp.c $(BSP_ROOT)/nRF5x/components/drivers_nrf/gpiote/nrf_drv_gpiote.c $(BSP_ROOT)/nRF5x/components/drivers_nrf/hal/nrf_ecb.c $(BSP_ROOT)/nRF5x/components/drivers_nrf/hal/nrf_nvmc.c $(BSP_ROOT)/nRF5x/components/drivers_nrf/hal/nrf_saadc.c $(BSP_ROOT)/nRF5x/components/drivers_nrf/i2s/nrf_drv_i2s.c $(BSP_ROOT)/nRF5x/components/drivers_nrf/lpcomp/nrf_drv_lpcomp.c $(BSP_ROOT)/nRF5x/components/drivers_nrf/nrf_soc_nosd/nrf_nvic.c $(BSP_ROOT)/nRF5x/components/drivers_nrf/nrf_soc_nosd/nrf_soc.c $(BSP_ROOT)/nRF5x/components/drivers_nrf/pdm/nrf_drv_pdm.c $(BSP_ROOT)/nRF5x/components/drivers_nrf/ppi/nrf_drv_ppi.c $(BSP_ROOT)/nRF5x/components/drivers_nrf/pwm/nrf_drv_pwm.c $(BSP_ROOT)/nRF5x/components/drivers_nrf/qdec/nrf_drv_qdec.c $(BSP_ROOT)/nRF5x/components/drivers_nrf/radio_config/radio_config.c $(BSP_ROOT)/nRF5x/components/drivers_nrf/rng/nrf_drv_rng.c $(BSP_ROOT)/nRF5x/components/drivers_nrf/rtc/nrf_drv_rtc.c $(BSP_ROOT)/nRF5x/components/drivers_nrf/saadc/nrf_drv_saadc.c $(BSP_ROOT)/nRF5x/components/drivers_nrf/sdio/sdio.c $(BSP_ROOT)/nRF5x/components/drivers_nrf/swi/nrf_drv_swi.c $(BSP_ROOT)/nRF5x/components/drivers_nrf/timer/nrf_drv_timer.c $(BSP_ROOT)/nRF5x/components/drivers_nrf/twis_slave/nrf_drv_twis.c $(BSP_ROOT)/nRF5x/components/drivers_nrf/twi_master/nrf_drv_twi.c $(BSP_ROOT)/nRF5x/components/drivers_nrf/wdt/nrf_drv_wdt.c $(BSP_ROOT)/nRF5x/components/libraries/util/app_error.c $(BSP_ROOT)/nRF5x/components/libraries/util/app_error_weak.c $(BSP_ROOT)/nRF5x/components/libraries/util/app_util_platform.c $(BSP_ROOT)/nRF5x/components/libraries/util/nrf_assert.c $(BSP_ROOT)/nRF5x/components/libraries/util/nrf_log.c $(BSP_ROOT)/nRF5x/components/libraries/util/sdk_mapped_flags.c $(BSP_ROOT)/nRF5x/components/softdevice/common/softdevice_handler/softdevice_handler.c $(BSP_ROOT)/nRF5x/components/toolchain/system_nrf52.c $(BSP_ROOT)/nRF5x/StartupFiles/startup_nRF52x.c LEDBlink.cpp nrf_esb.c
 EXTERNAL_LIBS := 
 EXTERNAL_LIBS_COPIED := $(foreach lib, $(EXTERNAL_LIBS),$(BINARYDIR)/$(notdir $(lib)))
 
@@ -197,10 +197,6 @@ $(BINARYDIR)/nrf_drv_comp.o : $(BSP_ROOT)/nRF5x/components/drivers_nrf/comp/nrf_
 	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
 
 
-$(BINARYDIR)/nrf_delay.o : $(BSP_ROOT)/nRF5x/components/drivers_nrf/delay/nrf_delay.c $(all_make_files) |$(BINARYDIR)
-	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
-
-
 $(BINARYDIR)/nrf_drv_gpiote.o : $(BSP_ROOT)/nRF5x/components/drivers_nrf/gpiote/nrf_drv_gpiote.c $(all_make_files) |$(BINARYDIR)
 	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
 
@@ -238,10 +234,6 @@ $(BINARYDIR)/nrf_drv_pdm.o : $(BSP_ROOT)/nRF5x/components/drivers_nrf/pdm/nrf_dr
 
 
 $(BINARYDIR)/nrf_drv_ppi.o : $(BSP_ROOT)/nRF5x/components/drivers_nrf/ppi/nrf_drv_ppi.c $(all_make_files) |$(BINARYDIR)
-	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
-
-
-$(BINARYDIR)/pstorage.o : $(BSP_ROOT)/nRF5x/components/drivers_nrf/pstorage/pstorage.c $(all_make_files) |$(BINARYDIR)
 	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
 
 

@@ -6,7 +6,7 @@ BINARYDIR := Debug
 
 #Additional flags
 PREPROCESSOR_MACROS := 
-INCLUDE_DIRS := 
+INCLUDE_DIRS := C:/Users/Christopher/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.nordic.nrf5x/nRF5x/components/libraries/log C:/Users/Christopher/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.nordic.nrf5x/nRF5x/components/libraries/log/src ../../../../../Desktop/NordicDevelopment/components/drivers_nrf/config
 LIBRARY_DIRS := 
 LIBRARY_NAMES := 
 ADDITIONAL_LINKER_INPUTS := 
